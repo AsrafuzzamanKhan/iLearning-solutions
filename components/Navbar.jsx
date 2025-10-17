@@ -67,8 +67,8 @@ const Navbar = () => {
         {
           isSeller && <button
             onClick={() => router.push('/seller')}
-            className="text-xs border px-4 py-1.5 rounded-full">
-            Seller Dashboard</button>
+            className="text-xs border px-4 py-1.5 rounded-full hover:shadow-lg cursor-pointer">
+            Admin Dashboard</button>
         }
         {/* <Link
           href="/dashboard"
@@ -102,7 +102,7 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center md:hidden gap-3">
-        {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full">Seller Dashboard</button>}
+        {isSeller && <button onClick={() => router.push('/seller')} className="text-xs border px-4 py-1.5 rounded-full cursor-pointer hover:shadow-lg ">Admin Dashboard</button>}
         {user ? <>
           <UserButton>
             <UserButton.MenuItems>

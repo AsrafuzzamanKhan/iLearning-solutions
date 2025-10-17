@@ -11,7 +11,7 @@ const AddProduct = () => {
   const [files, setFiles] = useState([]);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('Earphone');
+  const [category, setCategory] = useState('Scrum');
   const [duration, setDuration] = useState('');
   const [price, setPrice] = useState('');
   const [offerPrice, setOfferPrice] = useState('');
@@ -124,13 +124,13 @@ const AddProduct = () => {
               onChange={(e) => setCategory(e.target.value)}
               defaultValue={category}
             >
-              <option value="Earphone">Earphone</option>
-              <option value="Headphone">Headphone</option>
-              <option value="Watch">Watch</option>
-              <option value="Smartphone">Smartphone</option>
-              <option value="Laptop">Laptop</option>
-              <option value="Camera">Camera</option>
-              <option value="Accessories">Accessories</option>
+              <option value="Scrum">Scrum</option>
+              <option value="ProjectManagement">Project Management</option>
+
+              <option value="Kanban">Kanban</option>
+              <option value="ContinuousImprovement">Continuous Improvement</option>
+              <option value="Strategy">Strategy</option>
+
             </select>
           </div>
           <div className="flex flex-col gap-1 w-32">
